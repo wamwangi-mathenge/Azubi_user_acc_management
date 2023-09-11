@@ -65,3 +65,18 @@ You can verify by looking at the group file
 # cat /etc/group
 ```
 This will produce an output that shows the group you created.
+
+## Delete a User
+You can delete the user created by running the command:
+
+```
+sudo userdel -r spiderman
+```
+
+The `-r` deletes the directory as well.
+
+You can verify that the user and the directory were deleted by running:
+
+```
+# ls -ltr
+```
