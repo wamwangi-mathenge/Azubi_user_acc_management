@@ -51,3 +51,17 @@ This will generate an output showing an ID assigned to the user "spiderman"
 ```
 uid=1001(spiderman) gid=1005(spiderman) groups=1005(spiderman)
 ```
+
+## Creating a Group
+The command to add a new group is:
+
+```
+sudo groupadd superheroes
+```
+Once it gives the prompt back, it means it did create your group. 
+
+You can verify by looking at the group file
+```
+# cat /etc/group
+```
+This will produce an output that shows the group you created.
