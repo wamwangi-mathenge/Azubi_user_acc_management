@@ -138,3 +138,14 @@ To view the information on one user, you can run the command:
 grep spiderman /etc/passwd
 ```
 This gives only the information about the matching user - spiderman.
+
+The above commands can be written in one single command like so:
+```
+useradd -g superheroes -s /bon/bash -c "Ironman Character" -m -d /home/ironman ironman
+```
+
+## Create a Password
+After creating a user, it's best practice to create a password. This can be done by running the command:
+```
+passwd ironman
+```
