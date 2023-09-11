@@ -80,3 +80,14 @@ You can verify that the user and the directory were deleted by running:
 ```
 # ls -ltr
 ```
+
+## Delete a Group
+You can delete a group by running the command:
+```
+sudo group del superheroes
+```
+
+You can verify that the group was deleted by running:
+```
+$ cat /etc/group
+```
