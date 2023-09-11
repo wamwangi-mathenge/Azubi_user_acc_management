@@ -101,3 +101,40 @@ You can verify by running the command:
 ```
 grep spiderman /etc/group
 ```
+
+## Viewing Files
+On creating a user or a group, there are files created. To view these files you can run the command:
+```
+cat /etc/passwd
+```
+
+At the bottom as you add your user to the Linux system, it adds the information of the user at the bottom:
+
+```
+spiderman:x:1002:1002::home/spiderman:/bin/bash
+```
+
+The first column tells you the name, the second one tells you the password which is encrypted, denoted by the `x`. It is followed by the user_id and the group_id and the directory of the user. The shell the user is using is shown at the very end.
+
+The same can be used to view the group:
+```
+cat /etc/group
+```
+The output appears as such:
+```
+spiderman:x:1002
+```
+The output denotes the group by a name, then the group password which is the same password which is the same password that is used for anyone within that group and then the group id.
+
+Another file you can look at is:
+```
+cat /etc/shadow
+```
+
+This file is strictly for passwords of users that we create. The passwords are encrypted thus cannot be seen.
+
+To view the information on one user, you can run the command:
+```
+grep spiderman /etc/passwd
+```
+This gives only the information about the matching user - spiderman.
