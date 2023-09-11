@@ -91,3 +91,13 @@ You can verify that the group was deleted by running:
 ```
 $ cat /etc/group
 ```
+
+## Modify a User
+To modify a user, you can run:
+```
+sudo usermod -G superheroes spiderman
+```
+You can verify by running the command:
+```
+grep spiderman /etc/group
+```
